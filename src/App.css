@@ -96,7 +96,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   margin-left: 90px;
 }
 .footer {
-  height: 20px;
+  height: auto;
   background-color:black;
   color: white;
   text-align: center;
