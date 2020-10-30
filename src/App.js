@@ -27,8 +27,8 @@ function App() {
             <div className="page-content" />
             <Main/>
             <div className="footer">
-                All rights reserved. © Site created and maintained by Prerit Khandelwal. 2019
-        </div>
+                All rights reserved. © Site created and maintained by Prerit Khandelwal. {new Date().getFullYear()}
+            </div>
         </Content>
     </Layout>
 </div>

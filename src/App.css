@@ -1,3 +1,9 @@
+body{
+     background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .header-color{
   background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -20,8 +26,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 .banner-text {
   background-color: black;
   opacity: .8;
-  width: 200%;
-  margin-left: 50%;
+  padding: 1rem;
   border-radius: 10px;
 }
 
@@ -101,4 +106,57 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   color: white;
   text-align: center;
   font-family: sans-serif;
+}
+
+.logo-img{
+    display: block;
+    width: 100%;
+}
+.avatar-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.landing-hero-section, .banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.landing-hero-section{
+    height: calc(100vh - 128px);
+    gap: 1rem;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a{
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links-container{
+    width: 100%;
+}
+.social-links{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social-links a:hover{
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 578px){
+    .banner-text h1{
+        font-size: 3rem;
+    }
+    .banner-text{
+        max-width: 400px; 
+    }
 }

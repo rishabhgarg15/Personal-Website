@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
-import {Cell, Grid} from 'react-mdl';
 class LandingPage extends Component{
     render(){
         return(
-            <div style = {{width:'100%' ,margin:'auto'}}>
-                <Grid className = "landing-grid">
-                    <Cell cols={12}>
-                        <div class="animated slideInUp"><img src="https://d39qdlcrvnra4b.cloudfront.net/avatars/1605846/original/avatar.png?1559039487" 
+            <div className="landing-hero-section">
+                <div className="animated slideInUp logo-img">
+                    <img src="https://d39qdlcrvnra4b.cloudfront.net/avatars/1605846/original/avatar.png?1559039487" 
                         alt="avatar-pic"
                         className="avatar-img" 
-                        >
-                        </img></div>
-                        <div className="banner-text">
-                            <h1 class="animated slideInUp delay-2s">I'm a Full Stack Developer</h1>
+                        />
+                </div>
+                <div className="banner-text">
+                            <h1 className="animated slideInUp delay-2s">I'm a Full Stack Developer</h1>
                             <hr/>
-                            <p class="animated slideInUp delay-2s">Machine Learning | React Js | C/C++ | Python| MySQL | Competitive Programming</p>
-                            <div class="animated slideInUp"><div className="social-links">
+                            <p className="animated slideInUp delay-2s">Machine Learning | React Js | C/C++ | Python| MySQL | Competitive Programming</p>
+                            <div className="animated slideInUp social-links-container"><div className="social-links">
                                 {/* LinkedIn*/}
                                 <a href="https://www.linkedin.com/in/prerit-khandelwal-411a31156/" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square" aria-hidden='true'/>
@@ -35,8 +33,6 @@ class LandingPage extends Component{
                             </div>
                             </div>
                         </div>
-                    </Cell>
-                </Grid>
             </div>
         );
     }
